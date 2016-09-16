@@ -14,12 +14,66 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        if (NSUserDefaults.standardUserDefaults().objectForKey("FirstTime") == nil){
+            var myDict: NSDictionary?
+            if let path = NSBundle.mainBundle().pathForResource("hsk6", ofType: "plist") {
+                myDict = NSDictionary(contentsOfFile: path)
+            }
+            if let dict = myDict {
+                var array = []
+                array = dict["Cards2"] as Array<Dictionary<String, AnyObject>>
+                for d in array{
+                    var thisP = d["pinyin2"] as String
+                    var thisH = d["hanzi"] as String
+                    var thisE = d["english"] as String
+                    var thisT = d["traditional"] as String
+                    var thisJ = d["jyutping"] as String
+                    var thisLeng : Int = countElements(thisH)
+                    saveCore(thisP, h:thisH, t:thisT, e:thisE, leng:thisLeng, j: thisJ)
+                }
+                
+                NSUserDefaults.standardUserDefaults().setObject("Launched", forKey: "FirstTime")
+            }
+        }
+
+        
         // Override point for customization after application launch.
         return true
     }
-
+    
+    func saveCore(p: String, h: String, t:String, e:String, leng: Int, j:String) {
+        //1
+        let appDelegate =
+        UIApplication.sharedApplication().delegate as AppDelegate
+        
+        let managedContext = appDelegate.managedObjectContext!
+        
+        //2
+        let entity =  NSEntityDescription.entityForName("Word",
+            inManagedObjectContext:
+            managedContext)
+        
+        let word = NSManagedObject(entity: entity!,
+            insertIntoManagedObjectContext:managedContext)
+        
+        //3
+        word.setValue(p, forKey: "p")
+        word.setValue(h, forKey: "h")
+        word.setValue(t, forKey: "t")
+        word.setValue(e, forKey: "e")
+        word.setValue(j, forKey: "j")
+        word.setValue(0, forKey: "cc")
+        word.setValue(leng, forKey: "leng")
+        
+        //4
+        var error: NSError?
+        if !managedContext.save(&error) {
+            println("Could not save \(error), \(error?.userInfo)")
+        }
+    }
+    
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

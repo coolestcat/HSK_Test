@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE2761601ADB8D0E00496848 /* hsk6.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE27615F1ADB8D0E00496848 /* hsk6.plist */; };
+		CE2761611ADB8D0E00496848 /* hsk6.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE27615F1ADB8D0E00496848 /* hsk6.plist */; };
+		CE432AEA1BD6829B003ACC6F /* test.gpx in Resources */ = {isa = PBXBuildFile; fileRef = CE432AE91BD6829B003ACC6F /* test.gpx */; };
+		CE73B1171A78968200A17B42 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73B1161A78968200A17B42 /* ThirdViewController.swift */; };
+		CE73B1191A7897EE00A17B42 /* DownTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73B1181A7897EE00A17B42 /* DownTransitionManager.swift */; };
+		CE73B11B1A7898A000A17B42 /* UpTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73B11A1A7898A000A17B42 /* UpTransitionManager.swift */; };
 		CED797F91A76F4D500AC618F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED797F81A76F4D500AC618F /* AppDelegate.swift */; };
 		CED797FC1A76F4D600AC618F /* HSK_Test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CED797FA1A76F4D500AC618F /* HSK_Test.xcdatamodeld */; };
 		CED797FE1A76F4D600AC618F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED797FD1A76F4D600AC618F /* ViewController.swift */; };
@@ -14,6 +20,9 @@
 		CED798031A76F4D600AC618F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED798021A76F4D600AC618F /* Images.xcassets */; };
 		CED798061A76F4D600AC618F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED798041A76F4D600AC618F /* LaunchScreen.xib */; };
 		CED798121A76F4D600AC618F /* HSK_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED798111A76F4D600AC618F /* HSK_TestTests.swift */; };
+		CED7981C1A76F57800AC618F /* level_5_jyut.plist in Resources */ = {isa = PBXBuildFile; fileRef = CED7981B1A76F57700AC618F /* level_5_jyut.plist */; };
+		CED7981E1A76F5D000AC618F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7981D1A76F5D000AC618F /* SecondViewController.swift */; };
+		CED798201A76F5F300AC618F /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7981F1A76F5F300AC618F /* TransitionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE27615F1ADB8D0E00496848 /* hsk6.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hsk6.plist; sourceTree = "<group>"; };
+		CE432AE91BD6829B003ACC6F /* test.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.gpx; sourceTree = "<group>"; };
+		CE73B1161A78968200A17B42 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		CE73B1181A7897EE00A17B42 /* DownTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownTransitionManager.swift; sourceTree = "<group>"; };
+		CE73B11A1A7898A000A17B42 /* UpTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpTransitionManager.swift; sourceTree = "<group>"; };
 		CED797F31A76F4D500AC618F /* HSK Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HSK Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED797F71A76F4D500AC618F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CED797F81A76F4D500AC618F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +52,9 @@
 		CED7980B1A76F4D600AC618F /* HSK TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HSK TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED798101A76F4D600AC618F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CED798111A76F4D600AC618F /* HSK_TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSK_TestTests.swift; sourceTree = "<group>"; };
+		CED7981B1A76F57700AC618F /* level_5_jyut.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = level_5_jyut.plist; sourceTree = "<group>"; };
+		CED7981D1A76F5D000AC618F /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		CED7981F1A76F5F300AC618F /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +97,13 @@
 			isa = PBXGroup;
 			children = (
 				CED797F81A76F4D500AC618F /* AppDelegate.swift */,
+				CED7981D1A76F5D000AC618F /* SecondViewController.swift */,
+				CED7981F1A76F5F300AC618F /* TransitionManager.swift */,
+				CE73B1181A7897EE00A17B42 /* DownTransitionManager.swift */,
+				CE73B11A1A7898A000A17B42 /* UpTransitionManager.swift */,
 				CED797FD1A76F4D600AC618F /* ViewController.swift */,
 				CED797FF1A76F4D600AC618F /* Main.storyboard */,
+				CE73B1161A78968200A17B42 /* ThirdViewController.swift */,
 				CED798021A76F4D600AC618F /* Images.xcassets */,
 				CED798041A76F4D600AC618F /* LaunchScreen.xib */,
 				CED797FA1A76F4D500AC618F /* HSK_Test.xcdatamodeld */,
@@ -94,6 +116,9 @@
 			isa = PBXGroup;
 			children = (
 				CED797F71A76F4D500AC618F /* Info.plist */,
+				CE27615F1ADB8D0E00496848 /* hsk6.plist */,
+				CED7981B1A76F57700AC618F /* level_5_jyut.plist */,
+				CE432AE91BD6829B003ACC6F /* test.gpx */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -164,6 +189,7 @@
 				TargetAttributes = {
 					CED797F21A76F4D500AC618F = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 56HTXAZ27A;
 					};
 					CED7980A1A76F4D600AC618F = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -198,6 +224,9 @@
 				CED798011A76F4D600AC618F /* Main.storyboard in Resources */,
 				CED798061A76F4D600AC618F /* LaunchScreen.xib in Resources */,
 				CED798031A76F4D600AC618F /* Images.xcassets in Resources */,
+				CE2761601ADB8D0E00496848 /* hsk6.plist in Resources */,
+				CED7981C1A76F57800AC618F /* level_5_jyut.plist in Resources */,
+				CE432AEA1BD6829B003ACC6F /* test.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2761611ADB8D0E00496848 /* hsk6.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,9 +245,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED7981E1A76F5D000AC618F /* SecondViewController.swift in Sources */,
+				CED798201A76F5F300AC618F /* TransitionManager.swift in Sources */,
 				CED797FE1A76F4D600AC618F /* ViewController.swift in Sources */,
 				CED797FC1A76F4D600AC618F /* HSK_Test.xcdatamodeld in Sources */,
+				CE73B1171A78968200A17B42 /* ThirdViewController.swift in Sources */,
+				CE73B1191A7897EE00A17B42 /* DownTransitionManager.swift in Sources */,
 				CED797F91A76F4D500AC618F /* AppDelegate.swift in Sources */,
+				CE73B11B1A7898A000A17B42 /* UpTransitionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,9 +375,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "HSK Test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -350,9 +388,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "HSK Test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -409,6 +450,7 @@
 				CED798171A76F4D600AC618F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CED798181A76F4D600AC618F /* Build configuration list for PBXNativeTarget "HSK TestTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +459,7 @@
 				CED7981A1A76F4D600AC618F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
